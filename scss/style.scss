@@ -1,0 +1,66 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+@import 'header';
+@import 'footer';
+@import 'top';
+@import 'reference';
+@import 'prise';
+@import 'character';
+@import 'carma';
+
+.anim-show {
+   transform: translate(0px, 120%);
+   opacity: 0;
+   transition: all 1.8s ease 0.5s;
+}
+
+.anim-show._active,
+._active .anim-show {
+   transform: translate(0px, 0px);
+   opacity: 1;
+}
+
+.title {
+   font-size: 22px;
+   line-height: 150%;
+   padding: 30px 0px 20px;
+
+   color: #fff;
+
+   & {
+      opacity: 0;
+      transition: all 0.9s ease-out .7s;
+   }
+
+   &._active {
+      transition: all 0.9s ease-out .7s;
+      opacity: 1;
+
+   }
+
+   @media(max-width:740px) {
+      font-size: 18px;
+      padding: 15px 50px;
+   }
+
+}
+
+.title__item {
+   color: #fff;
+   transition: color 0.3s ease;
+   align-items: center;
+
+   &:hover,
+   :active {
+      color: rgb(129, 55, 55);
+      transition: color 0.3s ease;
+   }
+}
+
+.paralax {
+   position: absolute;
+   top: 300px;
+}

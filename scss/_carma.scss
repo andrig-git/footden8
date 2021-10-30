@@ -1,0 +1,84 @@
+.carma {
+   &__inner {
+      display: flex;
+      margin-bottom: 5px;
+
+      @media(max-width:740px) {
+         flex-direction: column-reverse;
+
+      }
+   }
+
+   &__image {
+      flex: 1 1 auto;
+      width: 50%;
+      background-image: url(../images/red2.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      color: #fff;
+
+      @media(max-width:740px) {
+         flex: 0 1 200px;
+         min-height: 200px;
+         width: 100%;
+         //display: inline-block;
+         margin-bottom: 5px;
+
+      }
+   }
+
+   &__body {
+      flex: 1 1 auto;
+      width: 50%;
+      background-color: #000;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      padding: 20px 0 10px;
+      text-align: center;
+      margin-right: 5px;
+
+      @media(max-width:740px) {
+         width: 100%;
+         //margin-bottom: 5px;
+
+
+      }
+   }
+
+
+   &__menu-item {
+      font-size: 14px;
+      padding: 5px 50px;
+   }
+
+   &__menu-ickon {
+      color: #fff;
+      transition: color 0.3s ease;
+
+      &:hover,
+      :active {
+         color: rgb(129, 55, 55);
+         transition: color 0.3s ease;
+      }
+   }
+
+   &__title {
+      font-size: 22px;
+      line-height: 150%;
+      padding: 15px 0px 20px;
+
+      color: #fff;
+
+      @media(max-width:740px) {
+         padding: 15px 50px;
+      }
+
+   }
+
+   &__menu-list {
+      list-style: none;
+   }
+
+}
